@@ -27,9 +27,7 @@ expression_list = [
 
 function next () {
   expression = expression_list.shift();
-  if(expression_list.length < 1) { 
-    next_button.style('display', 'none');
-  };
+  next_button.style('display', 'none');
   output.append('pre')
     .style('color', 'green')
     .text('expression > ' + expression);
@@ -45,5 +43,8 @@ function next () {
         .style('color', 'red')
         .text('     error > ' + e);
     }
+    if(expression_list.length > 0) { 
+      next_button.style('display', 'block');
+    };
   }, 1000);
 }
