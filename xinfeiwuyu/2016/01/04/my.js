@@ -17,12 +17,11 @@ output = body.append('div')
 next_button = body.append('button')
   .html('next >')
   .on('click', next);
-
 expression_list = [
 '1',
 '1 + 1',
-'x',
-'x = 1',
+'typeof(x)==\'undefined\'?x=1:x',
+'x = x + 1',
 'x'
 ];
 
