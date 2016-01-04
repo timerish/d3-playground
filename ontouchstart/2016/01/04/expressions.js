@@ -17,17 +17,20 @@ output = body.append('div')
 next_button = body.append('button')
   .html('next >')
   .on('click', next);
-expression_list = [
-'1',
-'1 + 1',
-'typeof(x)==\'undefined\'?x=1:x',
-'x = x + 1',
-'x'
-];
+
+data_src = 'https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/04/expressions.yaml';
+expression_list = [];
+d3.text(data_src, function (e, d) {
+  if(!e) {
+    expression_list = js_yaml.load(d);
+  }
+});
 
 function next () {
   expression = expression_list.shift();
-  next_button.style('display', 'none');
+  if(expression_list.length < 1) { 
+    next_button.style('display', 'none');
+  };
   output.append('pre')
     .style('color', 'green')
     .text('expression > ' + expression);
@@ -43,8 +46,5 @@ function next () {
         .style('color', 'red')
         .text('     error > ' + e);
     }
-    if(expression_list.length > 0) { 
-      next_button.style('display', 'block');
-    };
   }, 1000);
 }
