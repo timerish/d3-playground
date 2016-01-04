@@ -1,3 +1,4 @@
+d3.select("body").html('');//清除
 var width=400;//定义画布宽
 var height=400;//定义画布高
 //初始化svg画布 
