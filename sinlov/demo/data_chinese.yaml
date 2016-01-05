@@ -1,0 +1,14 @@
+- name: 大娃
+  color: red
+- name: 二娃
+  color: orange
+- name: 三娃
+  color: yellow
+- name: 四娃
+  color: green
+- name: 五娃
+  color: cyan
+- name: 六娃
+  color: blue
+- name: 七娃
+  color: purple

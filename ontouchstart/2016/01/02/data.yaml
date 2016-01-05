@@ -1,0 +1,9 @@
+- name: Apple
+  color: red 
+  background-color: green 
+- name: Banana
+  color: yellow 
+  background-color: blue 
+- name: Cherry
+  color: red
+  background-color: yellow 

@@ -1,0 +1,9 @@
+- name: 苹果 
+  color: green 
+  background-color: red 
+- name: 香蕉 
+  color: blue 
+  background-color: yellow 
+- name: 樱桃
+  color: yellow
+  background-color: red

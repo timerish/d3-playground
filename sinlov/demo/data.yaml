@@ -1,0 +1,14 @@
+- name: First Child
+  color: red
+- name: Second child
+  color: orange
+- name: Thrid child
+  color: yellow
+- name: Fourth child
+  color: green
+- name: Fifth child
+  color: cyan
+- name: Sixth child
+  color: blue
+- name: Seventh child
+  color: purple

@@ -1,0 +1,10 @@
+- name: Apple
+  color: green 
+- name: Banana
+  color: yellow 
+- name: Cherry
+  color: red
+- name: Orange 
+  color: orange
+- name: Strawberry
+  color: red

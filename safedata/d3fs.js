@@ -1,4 +1,5 @@
-use strict;
+"use strict";
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode
 
 console.log(d3.scale);
     
@@ -11,8 +12,8 @@ var color;
 
 var count = 500;
 (function displayLinearColor( global ){
-for(let var i = 1; i < global.count; i++) {
-  let var band = document.createElement('div');
+for(var i = 1; i < global.count; i++) {
+  var band = document.createElement('div');
   band.style.background = global.color(i);
   band.style.width = '100%';
   band.style.height = '1px';
