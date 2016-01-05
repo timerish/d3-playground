@@ -40,9 +40,12 @@ var rects=svg.selectAll(".MyRect")
                 return yScale(d);
              })
              .attr("width",xScale.rangeBand()-rectPadding)
+             .attr("height",0)//过渡项开始值
+             .transition()//启动过渡
+             .duration(2000)//持续时间2秒
              .attr("height",function(d){
                 return height-padding.top-padding.bottom-yScale(d);
-             })
+             })//过渡项最终值
              .attr("fill","steelblue");
 //添加文字
 var texts=svg.selectAll(".MyTest")
