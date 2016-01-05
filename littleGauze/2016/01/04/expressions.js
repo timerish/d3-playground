@@ -27,12 +27,10 @@ expression_list = [
 ];
 
 function next () {
-  u=setInterval(function(){
     
     expression = expression_list.shift();
     if(expression_list.length <=0) { 
       next_button.style('display', 'none');
-      clearInterval(u);
     };
     output.append('pre')
       .style('color', 'green')
@@ -50,7 +48,5 @@ function next () {
           .text('     error > ' + e);
       }
     }, 1000);
-  
-  },3000);
   
 }
