@@ -1,3 +1,4 @@
+body.html('');
 var dataset=[
 {x:20,y:30,r:10,color:'red'},
 {x:60,y:30,r:10,color:'Azure'},
