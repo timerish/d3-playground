@@ -42,7 +42,10 @@ var rects=svg.selectAll(".MyRect")
              .attr("width",xScale.rangeBand()-rectPadding)
              .attr("height",0)//过渡项开始值
              .transition()//启动过渡
-             .duration(2000)//持续时间2秒
+             .duration(1000)//持续时间2秒
+             .delay(function(d,i){//添加延时启动过渡效果
+                     return i*1000;
+             })
              .attr("height",function(d){
                 return height-padding.top-padding.bottom-yScale(d);
              })//过渡项最终值
