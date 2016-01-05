@@ -18,13 +18,13 @@ next_button = body.append('button')
   .html('next >')
   .on('click', next);
 
-expression_list = [
-'1',
-'1 + 1',
-'x',
-'x = 1',
-'x'
-];
+data_src = 'https://bigdata-mindstorms.github.io/d3-playground/littleGauze/2016/01/04/expressions.yaml';
+expression_list = [];
+d3.text(data_src, function (e, d) {
+  if(!e) {
+    expression_list = js_yaml.load(d);
+  }
+});
 
 function next () {
     
