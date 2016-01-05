@@ -19,7 +19,7 @@ expression_list = [];
 d3.text(data_src, function (e, d) {
   if(!e) {
     expression_list = js_yaml.load(d);
-    while(expression_list.length > 1) {
+    while(expression_list.length > 0) {
       next();
     }
   }
