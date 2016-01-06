@@ -1,3 +1,9 @@
 # yongbaofeng1234
-# Self HomePage:   https://github.com/bigdata-mindstorms/d3-playground/edit/gh-pages/yongbaofeng1234/README.md
-# Recent Developments：Hadoop,Data Ming,  Computational Advertising   . On the way.
+
+[GitHub page](https://github.com/yongbaofeng1234/)
+
+# Recent Developments：
+
+- Hadoop,Data Ming
+- Computational Advertising
+- On the way
