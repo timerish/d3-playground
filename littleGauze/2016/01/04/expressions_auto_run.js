@@ -19,8 +19,11 @@ expression_list = [];
 d3.text(data_src, function (e, d) {
   if(!e) {
     expression_list = js_yaml.load(d);
+    length = expression_list.length;
     while (expression_list.length) {
-      next();
+      setTimeout(function () {
+        next()
+      }, 1000 * length - (expression_list.length));
     }
   }
 });
