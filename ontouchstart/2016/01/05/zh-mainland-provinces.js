@@ -28,9 +28,7 @@ function load(e, d) {
         .attr("stroke", "black")
         .attr("stroke-width", "0.35")
         .on('mouseover', change_color('#1f77b4'))
-        .on('mouseout', change_color('#d62728'))
-        .on('touchstart', change_color('#1f77b4'))
-        .on('touchend', change_color('#d62728'));
+        .on('mouseout', change_color('#d62728'));
 }
 
 width = 800;
