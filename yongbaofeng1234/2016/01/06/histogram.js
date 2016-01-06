@@ -4,6 +4,7 @@ margin={left:50,top:30,right:20,bottom:20},
 g_width=width-margin.left-margin.right,
 g_height=height-margin.top-margin.bottom;
 
+body.append("div").attr("id","container")
 var svg=d3.select("#container").append("svg")
 .attr("width",width)
 .attr("height",height)
