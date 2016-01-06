@@ -2,6 +2,8 @@
 
 截屏
 
+# 建立新目录和文件
+
 ![](Screen Shot 2016-01-06 at 9.07.42 AM.png)
 
 ![](Screen Shot 2016-01-06 at 9.08.14 AM.png)
@@ -20,6 +22,3 @@
  
 ![](Screen Shot 2016-01-06 at 9.10.40 AM.png)
 
-![](Screen Shot 2016-01-06 at 9.13.04 AM.png)
-
-![](Screen Shot 2016-01-06 at 9.17.32 AM.png)
