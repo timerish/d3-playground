@@ -2,8 +2,15 @@ title = "中国地图"
 d3.select('title')
   .html(title);
 body = d3.select('body');
-body.append('h1')
+header = body.append('h2')
   .html(title);
+
+name_dispatch = d3.dispatch('name');
+name_dispatch.on('name', function (d) { 
+  if(d) {
+    header.html(title + ': ' + d);
+  }
+});
 
 function change_color(color) {
   return function () { 
@@ -28,7 +35,11 @@ function load(type) {
         .attr("fill", "#d62728")
         .attr("stroke", "black")
         .attr("stroke-width", "0.35")
-        .on('mouseover', change_color('#1f77b4'))
+        .on('mouseover', function (d) { 
+          name = d.properties.name_local || d.properties.name || d.properties.NAME;
+          name_dispatch.name(name); 
+          change_color('#1f77b4').call(this);
+        })
         .on('mouseout', change_color('#d62728'));
  };
 }
