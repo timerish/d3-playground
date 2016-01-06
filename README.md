@@ -32,6 +32,7 @@ Note to student users: please do not create/edit files outside your own home dir
 - [yangyi](yangyi)
 - [yongbaofeng1234](yongbaofeng1234)
 - [zhang-fei](zhang-fei)
+- [zhangzhou1](zhangzhou1)
 
 
 ## gh-pages
