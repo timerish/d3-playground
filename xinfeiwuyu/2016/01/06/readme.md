@@ -1,2 +1,2 @@
 - 随便玩玩
-- [my.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/xinfeiwuyu/2016/01/04/my.js)
+- [my.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/xinfeiwuyu/2016/01/06/my.js)
