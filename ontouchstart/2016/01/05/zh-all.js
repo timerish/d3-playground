@@ -5,6 +5,12 @@ body = d3.select('body');
 body.append('h1')
   .html(title);
 
+function change_color(color) {
+  return function () { 
+    d3.select(this).attr('fill', color);
+  };
+}
+
 function load(type) {
  return function (e, d) {
   console.log(d);
@@ -21,7 +27,11 @@ function load(type) {
         .attr("class", "province")
         .attr("fill", "#d62728")
         .attr("stroke", "black")
-        .attr("stroke-width", "0.35");
+        .attr("stroke-width", "0.35")
+        .on('mouseover', change_color('#1f77b4'))
+        .on('mouseout', change_color('#d62728'))
+        .on('touchstart', change_color('#1f77b4'))
+        .on('touchend', change_color('#d62728'));
  };
 }
 
