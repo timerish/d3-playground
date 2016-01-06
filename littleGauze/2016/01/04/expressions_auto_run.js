@@ -14,38 +14,33 @@ output = body.append('div')
   .style('margin', '0.5em')
   .style('padding', '0.5em');
 
-next_button = body.append('button')
-  .html('next >')
-  .on('click', next);
-
 data_src = 'https://bigdata-mindstorms.github.io/d3-playground/littleGauze/2016/01/04/expressions.yaml';
 expression_list = [];
 d3.text(data_src, function (e, d) {
   if(!e) {
     expression_list = js_yaml.load(d);
+    while (expression_list.length) {
+      next();
+    }
   }
 });
 
 function next () {
-    next_button.style('display', 'none');
-    
-    while (expression = expression_list.shift()) {
+    expression = expression_list.shift()
       output.append('pre')
       .style('color', 'green')
       .text('expression > ' + expression);
-      setTimeout(function () {
-        try {
-          value = eval(expression);
-          output.append('pre')
-            .style('color', 'blue')
-            .text('     value > ' + value);
-        }
-        catch (e) {
-          output.append('pre')
-            .style('color', 'red')
-            .text('     error > ' + e);
-        }
-      }, 1000);
-    };
-  
+    setTimeout(function () {
+      try {
+        value = eval(expression);
+        output.append('pre')
+          .style('color', 'blue')
+          .text('     value > ' + value);
+      }
+      catch (e) {
+        output.append('pre')
+          .style('color', 'red')
+          .text('     error > ' + e);
+      }
+    }, 1000);
 }
