@@ -30,17 +30,15 @@ function next () {
       output.append('pre')
       .style('color', 'green')
       .text('expression > ' + expression);
-    setTimeout(function () {
-      try {
-        value = eval(expression);
-        output.append('pre')
-          .style('color', 'blue')
-          .text('     value > ' + value);
-      }
-      catch (e) {
-        output.append('pre')
-          .style('color', 'red')
-          .text('     error > ' + e);
-      }
-    }, 1000);
+    try {
+      value = eval(expression);
+      output.append('pre')
+        .style('color', 'blue')
+        .text('     value > ' + value);
+    }
+    catch (e) {
+      output.append('pre')
+        .style('color', 'red')
+        .text('     error > ' + e);
+    }
 }
