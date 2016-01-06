@@ -20,6 +20,7 @@ Note to student users: please do not create/edit files outside your own home dir
 - [lrl1225](lrl1225)
 - [lzyforever](lzyforever)
 - [ontouchstart](ontouchstart)
+- [shuairenchang](shuairenchang)
 - [safedata](safedata)
 - [saySunshine](saySunshine)	
 - [shuchun](shuchun)
@@ -29,6 +30,7 @@ Note to student users: please do not create/edit files outside your own home dir
 - [xujincan](xujincan)
 - [yanglong2](yanglong2)
 - [yangyi](yangyi)
+- [yongbaofeng1234](yongbaofeng1234)
 - [zhang-fei](zhang-fei)
 
 
