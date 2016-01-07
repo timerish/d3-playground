@@ -3,8 +3,15 @@
 We write a very simple utility function `yp(obj)` to print an object in [YAML](http://yaml.org/) format on the screen. 
 ```javascript
 function yp(obj) { 
-  body.append('pre')
-    .html(js_yaml.dump(obj));
+  try {
+    body.append('pre')
+      .html(js_yaml.dump(obj));
+  }
+  catch (error) {
+    body.append('pre')
+      .style('color', 'red')
+      .html(js_yaml.dump(error));
+  }
 }
 ```
 Here are a few examples that use `yp(obj)` to inspect data.
