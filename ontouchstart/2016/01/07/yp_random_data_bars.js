@@ -12,6 +12,7 @@ function yp(obj) {
 
 function bars(obj) {
   try {
+   body.append('pre').html(obj.name);
    body.append('div').selectAll('div').data(obj.list).enter().append('div')
     .style('height', '10px')
     .style('border', '1px solid #ccc')
