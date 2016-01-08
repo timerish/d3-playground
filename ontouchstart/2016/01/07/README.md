@@ -26,8 +26,14 @@ We can also view the data as bars.
 function bars(obj) {
   try {
    body.append('pre').html(obj.name);
-   body.append('div').selectAll('div').data(obj.list).enter().append('div')
-    .style('height', '10px')
+   var size = window.innerWidth / 2;
+   var container = body.append('div')
+    .style('width', size)
+    .style('height', size)
+    .style('transform', 'rotate(-90deg)');
+   container.selectAll('div')
+    .data(obj.list).enter().append('div')
+    .style('height', size / obj.list.length)
     .style('border', '1px solid #ccc')
     .style('background', 'blue')
     .style('width', function (d) { return d * 100 + '%'; })
