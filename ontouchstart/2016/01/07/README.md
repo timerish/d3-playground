@@ -6,7 +6,10 @@ We write a very simple utility function `yp(obj)` to print an object in [YAML](h
 function yp(obj) { 
   try {
     body.append('pre')
-      .html(js_yaml.dump(obj));
+      .datum(obj)
+      .html(function (d) { 
+        return js_yaml.dump(obj);
+      });
   }
   catch (error) {
     body.append('pre')

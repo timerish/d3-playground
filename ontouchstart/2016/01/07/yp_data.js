@@ -1,7 +1,10 @@
 function yp(obj) { 
   try {
     body.append('pre')
-      .html(js_yaml.dump(obj));
+      .datum(obj)
+      .html(function (d) { 
+        return js_yaml.dump(obj);
+      });
   }
   catch (error) {
     body.append('pre')
