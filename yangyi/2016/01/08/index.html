@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>多啦衣梦引导页</title>
+</head>
+<style>
+    @import url(http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700);
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        font-family: 'PT Sans Caption', Arial, Verdana, Calibri;
+    }
+    * {
+        box-sizing: border-box;
+    }
+    .nav {
+        width: 230px;
+        min-width: 230px;
+        background-color: #333;
+        height: 100%;
+    }
+    .nav-link {
+        padding: 10px 5px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+    .nav-link:hover,
+    .nav-link:focus,
+    .nav-link:active {
+        background-color: #222;
+    }
+    .page-title {
+        text-align: center;
+        font-size: 2em;
+        padding: 10px;
+        line-height: 2.1em;
+    }
+    .targets {
+        position: absolute;
+        left: -9999px;
+        top: 0;
+    }
+    .wrapper {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+    .holder {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .layout {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: top ease-in-out .6s;
+    }
+    .page {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    .page-home {
+        top: 0;
+        background-color: #3498db;
+        color: #fff;
+        text-shadow: 1px 1px 0 #333;
+    }
+    .page-about {
+        top: 100%;
+        background-color: #e74c3c;
+        color: #fff;
+        text-shadow: 1px 1px 0 #333;
+    }
+    .page-skills {
+        top: 200%;
+        background-color: #27ae60;
+        color: #fff;
+        text-shadow: 1px 1px 0 #333;
+    }
+    .page-portfolio {
+        top: 300%;
+    }
+    #home:target ~ .wrapper .layout {
+        top: 0;
+    }
+    #about:target ~ .wrapper .layout {
+        top: -100%;
+    }
+    #skills:target ~ .wrapper .layout {
+        top: -200%;
+    }
+    #portfolio:target ~ .wrapper .layout {
+        top: -300%;
+    }
+</style>
+
+<body>
+<!-- non semantic targets -->
+<span class="targets" id="home"></span>
+<span class="targets" id="about"></span>
+<span class="targets" id="skills"></span>
+<span class="targets" id="portfolio"></span>
+<!-- targets -->
+<div class="wrapper">
+  <!--  <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home" class="nav-link">Home</a>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a>
+            <li class="nav-item"><a href="#skills" class="nav-link">Skills</a>
+            <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a>
+        </ul>
+    </nav>-->
+    <div class="holder">
+        <div class="layout">
+            <section class="page page-home">
+                <li class="nav-item"><a href="#about" class="nav-link">去第二页</a>
+                <h2 class="page-title">第一页</h2>
+            </section>
+            <section class="page page-about">
+
+
+                <li class="nav-item"><a href="#skills" class="nav-link">去第三页</a>
+                <h2 class="page-title">第二页</h2>
+            </section>
+            <section class="page page-skills">
+                <li class="nav-item"><a href="#portfolio" class="nav-link">去第四页</a>
+
+
+                <h2 class="page-title">第三页</h2>
+            </section>
+
+            <section class="page page-portfolio"><h2 class="page-title">
+
+                <li class="nav-item"><a href="#home" class="nav-link">去第一页</a>
+
+                    第四页</h2></section>
+        </div>
+    </div>
+</div>
+</body>
+</html>
