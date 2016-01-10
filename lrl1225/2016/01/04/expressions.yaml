@@ -1,6 +1,6 @@
 - 1
 - 1 + 1
-- typeof(x) == 'undefined' ? x = '' : x
+- typeof(x) == 'undefined' ? x = 1 : x
 - x = 1
 - x
 - new Date('2016/01/04 20:30:00+0800')
