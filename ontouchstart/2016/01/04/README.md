@@ -12,5 +12,5 @@
 3. 学会在[playground](https://bigdata-mindstorms.github.io/d3-playground/) 里运行和修改简单的JavaScript代码。
 4. 学会建立简单的[JavaScript代码文件](https://github.com/bigdata-mindstorms/d3-playground/blob/gh-pages/ontouchstart/2016/01/04/expressions.js)并找到相应的[公开网址](https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/04/expressions.js)。
 5. 学会在[playground](https://bigdata-mindstorms.github.io/d3-playground/)中从[外部网址](https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/04/expressions.js)[载入代码文件](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/04/expressions.js)。
-6. 通过在playground里运行和修改简单的[expressions](expressions.js)代码，了解JavaScript expression和value等重要基本概念。
+6. 通过在playground里运行和修改简单的[expressions](expressions.yaml)代码，了解JavaScript expression和value等重要基本概念。
 7. 在自己的课堂笔记中记录问题和心得，与老师和同学讨论。
