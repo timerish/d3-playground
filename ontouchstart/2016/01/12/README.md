@@ -14,3 +14,12 @@ line = d3.svg.line().x(function(d) { return d.x; }).y(function(d) { return d.y; 
 g = svg.append('g').datum(data).append("path").attr({ d: line, fill: 'none', stroke: '#000'})
 ```
 
+[square-svg.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/12/square-svg.js)
+
+```javascript
+d3.select('title').html('Square SVG');
+body.html(''); 
+svg = body.append('svg').style({ width: '100%', border: '1px solid #ccc'});
+svg.style('height', svg.style('width'));
+```
+
