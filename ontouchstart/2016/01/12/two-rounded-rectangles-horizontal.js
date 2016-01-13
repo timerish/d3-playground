@@ -1,0 +1,10 @@
+d3.select('title').html('Two Rounded Rectangles (horizontal)');
+body.html(''); 
+svg = body.append('svg').style({ width: '100%', border: '1px solid #ccc'});
+svg.style('height', svg.style('width'));
+w = parseInt(svg.style('width'));
+g = svg.append('g').attr('transform', 'translate(' + (w / 2) + ',' +  (w / 2) + ')');
+rect1 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect1.attr('transform', 'translate(' + (- rect1.attr('width') / 2 - w/4) + ',' +  (- rect1.attr('height') / 2) + ')');
+rect2 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect2.attr('transform', 'translate(' + (- rect2.attr('width') / 2 + w/4) + ',' +  (- rect2.attr('height') / 2) + ')');

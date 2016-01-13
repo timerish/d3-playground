@@ -22,21 +22,35 @@ rect = g.append('rect'). attr({x : 0, y: 0, width: w/2, height: w/4, rx: w/20, r
 rect.attr('transform', 'translate(' + (- rect.attr('width') / 2) + ',' +  (- rect.attr('height') / 2) + ')');
 ```
 
-[two-rounded-rectangles.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/12/two-rounded-rectangles.js)
+[two-rounded-rectangles-horizontal.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/12/two-rounded-rectangles-horizontal.js)
 
 ```javascript
-d3.select('title').html('Two Rounded Rectangles');
+d3.select('title').html('Two Rounded Rectangles (horizontal)');
 body.html(''); 
 svg = body.append('svg').style({ width: '100%', border: '1px solid #ccc'});
 svg.style('height', svg.style('width'));
 w = parseInt(svg.style('width'));
 g = svg.append('g').attr('transform', 'translate(' + (w / 2) + ',' +  (w / 2) + ')');
-rect1 = g.append('rect'). attr({x : 0, y: 0, width: w/2, height: w/4, rx: w/20, ry: w/20, fill: '#abc'});
-rect1.attr('transform', 'translate(' + (- rect1.attr('width') / 2) + ',' +  (- rect1.attr('height') / 2 - w/4) + ')');
-rect2 = g.append('rect'). attr({x : 0, y: 0, width: w/2, height: w/4, rx: w/20, ry: w/20, fill: '#abc'});
-rect2.attr('transform', 'translate(' + (- rect2.attr('width') / 2) + ',' +  (- rect2.attr('height') / 2 + w/4) + ')');
+rect1 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect1.attr('transform', 'translate(' + (- rect1.attr('width') / 2 - w/4) + ',' +  (- rect1.attr('height') / 2) + ')');
+rect2 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect2.attr('transform', 'translate(' + (- rect2.attr('width') / 2 + w/4) + ',' +  (- rect2.attr('height') / 2) + ')');
 ```
 
+[two-rounded-rectangles-vertical.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/12/two-rounded-rectangles-vertical.js)
+
+```javascript
+d3.select('title').html('Two Rounded Rectangles (vertical)');
+body.html(''); 
+svg = body.append('svg').style({ width: '100%', border: '1px solid #ccc'});
+svg.style('height', svg.style('width'));
+w = parseInt(svg.style('width'));
+g = svg.append('g').attr('transform', 'translate(' + (w / 2) + ',' +  (w / 2) + ')');
+rect1 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect1.attr('transform', 'translate(' + (- rect1.attr('width') / 2) + ',' +  (- rect1.attr('height') / 2 - w/4) + ')');
+rect2 = g.append('rect'). attr({x : 0, y: 0, width: w/4, height: w/8, rx: w/40, ry: w/40, fill: '#abc'});
+rect2.attr('transform', 'translate(' + (- rect2.attr('width') / 2) + ',' +  (- rect2.attr('height') / 2 + w/4) + ')');
+```
 
 [mess.js](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/12/mess.js)
 
