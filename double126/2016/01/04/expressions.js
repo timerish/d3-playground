@@ -20,9 +20,9 @@ next_button = body.append('button')
 
 expression_list = [
 '1',
-'1 + 1',
+'1 + 2',
 'x',
-'x = 1',
+'x = 2',
 'x'
 ];
 
