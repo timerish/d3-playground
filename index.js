@@ -8,10 +8,10 @@ body = d3.select('body')
 body.append('h1')
   .html('d3-playground');
 
-review_button = body.append('button')
+see_button = body.append('button')
   .style('display', 'none')
-  .html('Review the code')
-  .on('click', review);
+  .html('See the code')
+  .on('click', see);
 
 hide_button = body.append('button')
   .style('display', 'block')
@@ -25,15 +25,15 @@ code = body.append('pre')
   .style('padding','1em')
   .style('border','1px solid #CCC');
 
-function review () {
-  review_button.style('display', 'none');
+function see () {
+  see_button.style('display', 'none');
   hide_button.style('display', 'block');
   code.style('display', 'block');
 }
 
 function hide () {
   hide_button.style('display', 'none');
-  review_button.style('display', 'block');
+  see_button.style('display', 'block');
   code.style('display', 'none');
 }
 
@@ -56,4 +56,5 @@ d3.text(src, function (e, d){
     code.text('// Error: ' + e.statusText);
     console.log(e);
   }
+  hide();
 })
