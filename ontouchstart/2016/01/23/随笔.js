@@ -28,3 +28,6 @@ think_and_learn.append('img').attr({
 });
 think_and_learn.append('blockquote').html('... how computers may affect the way people think and learn.');
 think_and_learn.append('blockquote').html('... 计算机可能如何影响人们的思考和学习方式。');
+
+ideas = d3.select('body').append('div').html('35年前的思想，技术上现在才开始成熟。人们的思考和学习方式变化要慢得多。尤其是我们的教育体制和企业培训方式。');
+
