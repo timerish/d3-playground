@@ -13,3 +13,9 @@ mindstorms_cover = d3.select('body').append('img').attr({
   src: 'https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/23/mindstorms_cover.png',
   width: '50%'
 })
+mindstorms_cover.style({
+  cursor: 'pointer'
+});
+mindstorms_cover.on('click', function () {
+  location = 'http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746';
+});
