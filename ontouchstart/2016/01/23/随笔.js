@@ -29,5 +29,5 @@ think_and_learn.append('img').attr({
 think_and_learn.append('blockquote').html('... how computers may affect the way people think and learn.');
 think_and_learn.append('blockquote').html('... 计算机如何影响人们的思考和学习方式。');
 
-ideas = d3.select('body').append('div').html('35年前的思想，技术上现在才开始成熟。人们的思考和学习方式变化要慢得多。尤其是我们的教育体制和企业培训方式。');
-bigdata_mindstorms = d3.select('body').append('div').html('我们这个网课就是这方面创新的一个尝试。希望大家积极参与合作。这里不是蓝翔技校或者昌平安卓集训中心。希望大家在这里学到的东西二十年后还有价值。')
+ideas = think_and_learn.append('p').html('35年前的思想，技术上现在才开始成熟。人们的思考和学习方式变化要慢得多。尤其是我们的教育体制和企业培训方式。');
+bigdata_mindstorms = think_and_learn.append('p').html('我们这个网课就是这方面创新的一个尝试。希望大家积极参与合作。这里不是蓝翔技校或者昌平安卓集训中心。希望大家在这里学到的东西二十年后还有价值。')
