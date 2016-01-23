@@ -11,7 +11,7 @@ d3.select('title')
 body.append('h1')
   .style('text-align', 'center')
   .style('margin', '1em')
-  .html(tilte);
+  .html(title);
 
 colorDispatch = d3.dispatch('color');
 colorDispatch.on('color', function (color) {
@@ -32,8 +32,8 @@ body.selectAll('div')
   .style('text-align', 'center')
   .style('display', 'inline-block')
   .on('mouseover', function (d) {
-    color_dispatch.color(d);
+    colorDispatch.color(d);
   })
   .on('touchstart', function (d) {
-    color_dispatch.color(d);
+    colorDispatch.color(d);
   });
