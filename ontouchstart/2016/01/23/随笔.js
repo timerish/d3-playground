@@ -2,3 +2,4 @@
 d3.select('title').html(题目);
 大标题 = d3.select('body').append('h1');
 大标题.html(题目);
+第一段 = d3.select('body').append('div').html('这次试图能用中文的尽量用中文，但是又不陷入丙正正的误区。');
