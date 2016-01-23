@@ -5,9 +5,6 @@ js_yaml = require('js-yaml');
 body = d3.select('body')
   .style('padding', '1em');
 
-body.append('h1')
-  .html('d3-playground');
-
 run_button = body.append('button')
   .style('display', 'inline-block')
   .style('margin-right', '1em')
