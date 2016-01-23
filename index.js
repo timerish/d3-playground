@@ -10,12 +10,12 @@ body.append('h1')
 
 see_button = body.append('button')
   .style('display', 'none')
-  .html('See the code')
+  .html('See the code 看代码')
   .on('click', see);
 
 hide_button = body.append('button')
   .style('display', 'block')
-  .html('Hide the code')
+  .html('Hide the code 藏代码')
   .on('click', hide);
 
 code = body.append('pre')
@@ -39,7 +39,7 @@ function hide () {
 
 run_button = body.append('button')
   .style('display', 'block')
-  .html('Run the code')
+  .html('Run 运行')
   .on('click', run);
 
 function run () {
