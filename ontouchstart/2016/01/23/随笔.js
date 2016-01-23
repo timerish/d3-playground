@@ -8,3 +8,4 @@ d3.select('title').html(题目);
 丙正正.on('click', function () {
   location = 'http://baike.baidu.com/client/view/1718420.htm';
 });
+mindstorms = d3.select('body').append('h1').html('Mindstorms');
