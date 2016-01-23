@@ -12,10 +12,19 @@ mindstorms = d3.select('body').append('h1').html('Mindstorms (头脑风暴)');
 mindstorms_cover = d3.select('body').append('img').attr({
   src: 'https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/23/mindstorms_cover.png',
   width: '50%'
-})
+});
 mindstorms_cover.style({
   cursor: 'pointer'
 });
 mindstorms_cover.on('click', function () {
   location = 'http://www.amazon.com/Mindstorms-Children-Computers-Powerful-Ideas/dp/0465046746';
 });
+
+think_and_learn = d3.select('body').append('div');
+think_and_learn.append('h2').html('Think and learn');
+think_and_learn.append('img').attr({
+  src: 'https://bigdata-mindstorms.github.io/d3-playground/ontouchstart/2016/01/23/mindstorms_think_and_learn.png',
+  width: '50%'
+});
+think_and_learn.append('blockquote').html('... how computers may affect the way people think and learn.');
+think_and_learn.append('blockquote').html('... 计算机可能如何影响人们的思考和学习方式。');
