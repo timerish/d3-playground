@@ -1,6 +1,6 @@
 d3.select('body')
   .append('p').html('<h1>Have a good time!<h1>')
-  .append('area').html('<br><h2>Learn html element from here!</h2>')
+  .append('div').html('<br><h2>Learn html element from here!</h2>')
   .append('a').attr('href','https://developer.mozilla.org/en-US/docs/Web/HTML/Element')
   .html('<br><b>HTML element reference（英文）</b>')
   .append('a').attr('href','https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element')
