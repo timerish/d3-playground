@@ -2,6 +2,8 @@ title = 'Functions (函数)';
 d3.select('title').html(title);
 d3.select('body').append('h1').html(title);
 
+d3.select('body').append('blockquote').html('通常来说，一个函数就是一个可以被外部代码调用(或者函数本身递归调用)的"子程序"。和程序本身一样，一个函数的函数体是由一系列的语句组成的。函数可以接收传入参数，也可以返回一个值。').style('cursor', 'pointer').on('click', function () { location = 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Functions';});
+
 function add_link(selection, href, html) {
   selection.append('a').attr('href', href).html(html)
 }
