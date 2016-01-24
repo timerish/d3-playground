@@ -24,6 +24,7 @@ print(d3.select('body'), print);
 print(d3.select('body'), add_link);
 打印(d3.select('body'), 加链接);
 
+d3.select('body').append('p').html('请参考源代码和下面的资料自己探索');
 add_link(d3.select('body').append('p').html('Here is the link '), 'https://developer.mozilla.org/en/docs/Web/JavaScript/Guide/Functions', 'MDN Functions');
 加链接(d3.select('body').append('p').html('这是中文链接 '), 'https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Functions', 'MDN 函数');
 
