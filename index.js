@@ -5,42 +5,40 @@ js_yaml = require('js-yaml');
 body = d3.select('body')
   .style('padding', '1em');
 
-body.append('h1')
-  .html('d3-playground');
+run_button = body.append('button')
+  .style('display', 'inline-block')
+  .style('margin-right', '1em')
+  .html('Run 运行')
+  .on('click', run);
 
-review_button = body.append('button')
+see_button = body.append('button')
   .style('display', 'none')
-  .html('Review the code')
-  .on('click', review);
+  .html('See the code 看代码')
+  .on('click', see);
 
 hide_button = body.append('button')
-  .style('display', 'block')
-  .html('Hide the code')
+  .style('display', 'inline-block')
+  .html('Hide the code 藏代码')
   .on('click', hide);
 
 code = body.append('pre')
   .attr('contenteditable', true)
-  .style('display', 'block')
+  .style('display', 'inline-block')
   .style('white-space', 'pre-wrap')
   .style('padding','1em')
   .style('border','1px solid #CCC');
 
-function review () {
-  review_button.style('display', 'none');
-  hide_button.style('display', 'block');
+function see () {
+  see_button.style('display', 'none');
+  hide_button.style('display', 'inline-block');
   code.style('display', 'block');
 }
 
 function hide () {
   hide_button.style('display', 'none');
-  review_button.style('display', 'block');
+  see_button.style('display', 'inline-block');
   code.style('display', 'none');
 }
-
-run_button = body.append('button')
-  .style('display', 'block')
-  .html('Run the code')
-  .on('click', run);
 
 function run () {
   eval(code.text());
@@ -56,4 +54,5 @@ d3.text(src, function (e, d){
     code.text('// Error: ' + e.statusText);
     console.log(e);
   }
+  hide();
 })
