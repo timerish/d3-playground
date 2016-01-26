@@ -1,0 +1,10 @@
+d3.select('body')
+  .append('button')
+  .attr('id',"dropdown-menu")
+  .attr('lablel','Action')
+  .attr('type', "menu")
+  .attr('menuitem', 'drop...')
+  .attr('menuitem', 'down...')
+  .style('color','red')
+  .html('dropdown')
+  // 菜单还是没搞出来啊
