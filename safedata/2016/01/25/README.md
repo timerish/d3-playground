@@ -1,4 +1,4 @@
-[issue simple js in sandbox](issue23.js) <br/>
+[issue23 simple js in sandbox](issue23.js) <br/>
 [issue24 - d3 basic](d3basic.js)<br/>
 [issue27 - Html Element](htmlelement.js)<br/>
 [issue28 - HTML Style](htmlstyle.js)<br/>
