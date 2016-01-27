@@ -22,11 +22,36 @@ function getMatrix(row,col,min,max){
 }
 //展示数据
 function showOriginData(array){
-    d3.select('body')
-      .append('p')
-      .style('font-size','20px')
-      .attr('color','steelblue')
-      .html('元数据：['+a.join()+']');
+    if(Array.isArray(array)&&array.length>0){
+          paintText('元数据：[',false);
+          if(Array.isArray(array[0])){
+                array.forEach(function(item,index,array){
+                        paintText('['+item.join()+']',true);
+                 });
+                paintText(']',true);
+          }else{
+              paintText(array.join()+']',false);
+         }
+    }
+}
+//绘制文字
+//text 文本
+//br 是否换行
+function paintText(text,br){
+    if(br){
+        d3.select('body')
+          .append('p')
+          .style('color','steelblue')
+          .style('font-size','20px')
+          .html(text);
+    }else{
+        d3.select('body')
+          .append('p')
+          .style('display','inline')
+          .style('color','steelblue')
+          .style('font-size','20px')
+          .html(text);
+    }
 }
 //绘制
 function paint(array){
@@ -67,9 +92,12 @@ function paint(array){
       .attr('class','axis')
       .attr('transform','translate('+leftPadding+','+(array.length*rectHeight+3)+')')
       .call(axis);
+    
 }
 
 //随机获取一组数据
 var data=getArray(10,0,100);
 //将数据转化为图标展示
 paint(data);
+//展示数据
+showOriginData(data);
