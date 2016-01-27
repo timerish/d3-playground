@@ -4,8 +4,9 @@ d3.select('body').append('h1').html(title);
 
 function print_array(array) {
   var ul = d3.select('body').append('ul');
-  array.forEach(function(item) {
-    ul.append('li').html(item);
+  array.forEach(function(item, index, array) {
+    ul.append('li').html(item).attr('class', 'item-' + index);
+    console.log(array);
   });
 }
 
