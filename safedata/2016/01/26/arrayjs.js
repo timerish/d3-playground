@@ -7,8 +7,8 @@ d3.select('body').append('h1').html(title);
 function print_array(arrayname, array) {
   d3.select('body').append('div').html(arrayname);
   var ul = d3.select('body').append('ul');
-  array.forEach(function(item) {
-    ul.append('li').html(item);
+  array.forEach(function(item, i) {
+    ul.append('li').html(item + '  ' + i);
   });
 }
 
