@@ -53,8 +53,8 @@ function paintText(text,br){
           .html(text);
     }
 }
-//绘制
-function paint(array){
+//绘制柱状图
+function paintRect(array){
    //左留白
    var leftPadding=50;
    //矩形高度
@@ -121,11 +121,11 @@ function paintCircle(trajectory){
 var data=getArray(10,0,100);
 //随机获取20组坐标
 var trajectory=getMatrix(20,2,0,250);
-//将数据转化为图标展示
-paint(data);
-//展示数据
+//将数据转化为图表展示
+paintRect(data);
+//展示图表数据
 showOriginData(data);
-//沿坐标运动
+//绘制圆沿坐标运动
 paintCircle(trajectory);
 
 
