@@ -94,10 +94,38 @@ function paint(array){
       .call(axis);
     
 }
+//绘制沿路径运动的圆
+function paintCircle(trajectory){
+     var circle=d3.select('body')
+                  .append('svg')
+                  .attr('width',300)
+                  .attr('height',300)
+                  .append('circle')
+                  .attr('cx',100)
+                  .attr('cy',100)
+                  .attr('r',20)
+                  .style('fill','#f849a6');
+     trajectory.forEach(function(item,index,array){
+             if(Array.isArray(item)&&item.length>=2){
+                 circle=circle.transition()
+                        .duration(3000)
+                        .ease("bounce")
+                        .attr("cx",item[0])
+                        .attr("cy",item[1]);
+                //console.log(index+":"+item.join());
+             }
+     });
+}
 
 //随机获取一组数据
 var data=getArray(10,0,100);
+//随机获取20组坐标
+var trajectory=getMatrix(20,2,0,250);
 //将数据转化为图标展示
 paint(data);
 //展示数据
 showOriginData(data);
+//沿坐标运动
+paintCircle(trajectory);
+
+
