@@ -15,10 +15,18 @@ function getArray(length,min,max){
 function getMatrix(row,col,min,max){
       var tmpArray=[];
       for(var i=0;i<row;i++){
-          var tmp=initArray(col,min,max);
+          var tmp=getArray(col,min,max);
           tmpArray.push(tmp);
       }
       return tmpArray;
+}
+//展示数据
+function showOriginData(array){
+    d3.select('body')
+      .append('p')
+      .style('font-size','20px')
+      .attr('color','steelblue')
+      .html('元数据：['+a.join()+']');
 }
 //绘制
 function paint(array){
