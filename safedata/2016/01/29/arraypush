@@ -1,0 +1,7 @@
+var sports = ['soccer', 'baseball'];
+console.log('before push', sports); // ['soccer', 'baseball']
+
+var total = sports.push('football', 'swimming');
+
+console.log('after push', sports); // ['soccer', 'baseball', 'football', 'swimming']
+console.log('total elment', total);  //push returns the element number after push, thus print out 4
