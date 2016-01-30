@@ -12,6 +12,15 @@ d3.json(src, function (e, d) {
       .data(api.modules)
       .enter()
       .append('li')
-      .html(function (d) { return d.name });
+      .html(function (d) { 
+        return d.name;
+      })
+      .each(function (d) { 
+        d3.select(this)
+          .append('div')
+          .html(function (d) { 
+            return d.desc;
+          });
+      });
   }
 })
