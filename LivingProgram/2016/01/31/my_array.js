@@ -11,6 +11,7 @@ function print_array(array) {
     console.log(item, index);
   });
 }
-
-shopping_list = ["eggs", "milk", "cheese", "bacon"];
+var new_item = "userinput"
+shopping_list = ["eggs", "milk", "cheese", "bacon", new_item];
 print_array(shopping_list)
+
