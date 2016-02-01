@@ -1,1 +1,17 @@
+//single object arrays
+["I can be words"]
+[1234567890]
+[true]
+[false]
 
+//double object arrays
+["words", "more words"]
+[123, 456]
+[true, false]
+
+//the pattern can continue
+["words", "words", "words"]
+[123, 456, 789]
+
+//mixed arrays
+["this is so cool", 1234145341, "wow javascript cannot do this", "that is very", true, "other languages too", "yep"]
