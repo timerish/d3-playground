@@ -1,4 +1,3 @@
-
 d3.select('body')
   .append('div').html('<p>hello world</p>')
   .append('a')
