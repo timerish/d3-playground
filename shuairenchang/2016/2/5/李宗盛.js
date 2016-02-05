@@ -5,7 +5,7 @@ d3.select('body')
   .append('video')
   .attr({ 
     autoplay : true, 
-    src : src,
     controls:true,
-    autobuffer:true
+    autobuffer:true,
+    src : src
     });
