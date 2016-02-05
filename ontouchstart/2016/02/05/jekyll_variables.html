@@ -18,13 +18,13 @@ Here is an example of how to use Jeykll variables to make web page with d3.
 ul = d3.select('body').append('ul');
 ul.append('li')
   .append('a')
-  .attr({{ page.data.jeykll.attr | jsonify }})
-  .html({{ page.data.jekyll.html }});
+  .attr({{ page.data.jekyll.attr | jsonify }})
+  .html({{ page.data.jekyll.html | jsonify }});
 
 ul.append('li')
   .append('a')
   .attr({{ page.data.source.attr | jsonify }})
-  .html({{ page.data.source.html }});
+  .html({{ page.data.source.html | jsonify }});
 
 </script>
 
