@@ -9,7 +9,7 @@ d3.select('body')
     autobuffer:true,
     loop:true,
     src : src
-    });
+    })
   .style({
     width : 600,
     height : 600
