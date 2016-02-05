@@ -4,7 +4,7 @@ d3.select('body')
   .html('<h1>恭喜恭喜(李宗胜)</h1>')
   .append('video')
   .attr({ 
-    autoplay : false, 
+    autoplay : true, 
     src : src
     controls:true,
     autobuffer:true,
