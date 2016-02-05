@@ -7,5 +7,6 @@ d3.select('body')
     autoplay : true, 
     controls:true,
     autobuffer:true,
+    loop:true,
     src : src
     });
