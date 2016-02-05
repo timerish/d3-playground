@@ -11,6 +11,6 @@ d3.select('body')
     src : src
     });
   .style({
-    width :600,
-    height :600
+    width : 600,
+    height : 600
     });  
