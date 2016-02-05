@@ -10,7 +10,7 @@ d3.select('body')
     loop:true,
     src : src
     })
-  .style({
+d3.select('body').style({
     width : 600,
     height : 600
     });  
