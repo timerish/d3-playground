@@ -6,4 +6,4 @@
 - 5.JSON.stringify()方法可以将任意的 JavaScript 值序列化成 JSON 字符串。
 - 6.JSON.parse()方法可以将任意的 JSON 字符串解析成 JavaScript 值。
 
-- [String Number Logic](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/lrl1225/2016/01/27/str_num_logic.js)
+- [String Number Logic](https://bigdata-mindstorms.github.io/d3-playground/#https://bigdata-mindstorms.github.io/d3-playground/lrl1225/2016/01/27/str_num_logic.json)
