@@ -1,5 +1,5 @@
 str_num_logic = [];
-str_num_logic.push('apple');
+str_num_logic.push("apple");
 str_num_logic.push(2016);
 str_num_logic.push(true);
 console.log(str_num_logic);
