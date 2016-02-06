@@ -5,7 +5,7 @@ var table = d3.select('body').append('table').style('font-size','28px').style('w
 function print_array(array) {
   var tb = table.append('tr').style('background','#123456').style('color','#fff');
   array.forEach(function(item) {
-        tb.append('td').html(item);
+    tb.append('td').html(item);
   });
 } 
 序号 = ['序号',1,2,3];                  
