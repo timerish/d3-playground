@@ -10,7 +10,7 @@ function print_array(array) {
 } 
 序号 = ['序号',1,2,3];                  
 水果 = ['水果','香蕉','苹果','鸭梨'];
-价钱 = ['价钱','3元','6元','5元'];
+价格 = ['价格','3元','6元','5元'];
 print_array(序号);
 print_array(水果);
-print_array(价钱);
+print_array(价格);
