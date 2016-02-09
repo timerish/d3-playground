@@ -1,4 +1,5 @@
 # double126
+```markdown
 #####2016/01/19########
 1、html/head/body
 2、div容器，给元素分组。组内元素具有相同属性。。待续，测试不同元素,<lang>,<article>,<nav>
@@ -10,3 +11,4 @@
 4、ul unordered list标签
 5、li list中的元素
 6、获取js路径:copy path
+```
