@@ -27,6 +27,7 @@ drag_out.origin(function(d) { return d; });
 drag_out.on("dragstart", function() {
   d3.event.sourceEvent.stopPropagation(); // silence other listeners
 });
+
 drag_out.on('drag', function (d) {
   d3.select(this)
     .style({ cursor: 'pointer' })
@@ -37,7 +38,14 @@ drag_out.on('drag', function (d) {
   });
 });
 
-
+drag_out.on('dragend', function (d) {
+  d3.select(this)
+    .select('line')
+    .attr({
+      x2: function (d) { return window.innerWidth / 2  },
+      y2: function (d) { return window.innerWidth / 2 + 50}
+  });
+});
 
 function add_drag_out_line(selection) {
   var rect = selection.node().getBoundingClientRect();
