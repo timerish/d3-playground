@@ -1,6 +1,6 @@
 drag = d3.behavior.drag()
 drag.origin(function(d) { return d; });
-dragmove = function (d) {
+drag.on('drag', function (d) {
   d.x = d3.event.x;
   d.y = d3.event.y;
   d3.select(this)
@@ -8,19 +8,16 @@ dragmove = function (d) {
       left: function (d) { return d.x },
       top: function (d) { return d.y },
     });
-};
+});
 
-drag.on('drag', dragmove);
-
-function draggable(selection) {
+function add_drag(selection) {
   var rect = selection.node().getBoundingClientRect();
   selection.datum({x: rect.left, y: rect.top});
   selection.style({
     position: 'absolute',
     left: function (d) { return d.x },
     top: function (d) { return d.y },
- });
-
+  });
   selection.call(drag);
 };
 
@@ -31,5 +28,6 @@ selection = d3.select('body')
     height: 100,
     background: 'blue' 
   });
-  
-draggable(selection)
+
+add_drag(selection);
+
