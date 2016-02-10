@@ -31,8 +31,7 @@ function load_comments() {
            selection.append('div')
              .style({
                margin: '1em',
-               padding: '1em',
-               border: '1px solid #ccc'
+               padding: '1em'
              })
              .html(marked(d.body))
              .append('a')
